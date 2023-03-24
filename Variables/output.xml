@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230323 00:48:33.327" rpa="false" schemaversion="3">
+<suite id="s1" name="Practice" source="D:\2022\pythonProject\Introduction_Robot_Framework\Variables\practice.robot">
+<kw name="Navigate To Home Page" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230323 00:48:33.532" level="INFO">Opening browser 'edge' to base url 'https://es.wikipedia.org/wiki/Wikipedia:Portada'.</msg>
+<status status="PASS" starttime="20230323 00:48:33.531" endtime="20230323 00:48:36.998"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230323 00:48:37.998" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230323 00:48:36.998" endtime="20230323 00:48:37.998"/>
+</kw>
+<status status="PASS" starttime="20230323 00:48:33.531" endtime="20230323 00:48:37.998"/>
+</kw>
+<test id="s1-t1" name="Using Variables" line="7">
+<kw name="Comment" library="BuiltIn">
+<arg>This tests uses varibles!</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230323 00:48:37.999" endtime="20230323 00:48:37.999"/>
+</kw>
+<status status="PASS" starttime="20230323 00:48:37.998" endtime="20230323 00:48:38.000"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230323 00:48:38.002" endtime="20230323 00:48:40.231"/>
+</kw>
+<status status="PASS" starttime="20230323 00:48:33.329" endtime="20230323 00:48:40.231"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Practice">Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

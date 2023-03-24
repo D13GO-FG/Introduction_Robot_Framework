@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230323 00:25:33.683" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 001" source="D:\2022\pythonProject\Introduction_Robot_Framework\TestCase\TC_001.robot">
+<test id="s1-t1" name="Check main page" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://es.wikipedia.org/wiki/Wikipedia:Portada</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230323 00:25:33.888" level="INFO">Opening browser 'edge' to base url 'https://es.wikipedia.org/wiki/Wikipedia:Portada'.</msg>
+<status status="PASS" starttime="20230323 00:25:33.888" endtime="20230323 00:25:36.949"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Checking that we're on the main page of wikipedia</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230323 00:25:36.949" endtime="20230323 00:25:36.950"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Wikipedia</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230323 00:25:37.021" level="INFO">Current page contains text 'Wikipedia'.</msg>
+<status status="PASS" starttime="20230323 00:25:36.950" endtime="20230323 00:25:37.022"/>
+</kw>
+<status status="PASS" starttime="20230323 00:25:33.887" endtime="20230323 00:25:37.023"/>
+</test>
+<status status="PASS" starttime="20230323 00:25:33.684" endtime="20230323 00:25:37.024"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 001">TC 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
