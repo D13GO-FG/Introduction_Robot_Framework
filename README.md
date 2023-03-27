@@ -13,7 +13,7 @@
 5. Page Object Model
 
 
-### Test Case 001
+### Example Test Case 001
 1. Log in to https://opensource-demo.orangehrmlive.com/
 2. Verify the user is logged in successfully
 3. Logout and Verify
